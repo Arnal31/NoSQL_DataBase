@@ -33,7 +33,7 @@ def createTable():
         a = input("Введите название колонны (оставьте пустоту если все): ")
         if not a:
             break
-        s = input("Структура данных: ")
+        s = input("Структура данных(str, int, bool, float) :  ")
         constraints["NOT NULL"] = bool(int(input("NOT NULL: ")))
         constraints["Unique"] = bool(int(input("Unique: ")))
         cpd["constraints"] = constraints
